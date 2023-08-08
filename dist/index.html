@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>i2CanDoIt</title>
+    <link rel="stylesheet" href="../src/style.css">
+</head>
+<body>
+    <div id="page-container">
+        <header id="header">
+            <div class="app-name">i<span class="2">2</span>CanDoIt</div>
+            <button class="add-task">
+                <i>+</i>
+                Add Todo
+            </button>
+        </header>
+
+        <section class="side-bar">
+            <button class="today"><span class="today-icon">#</span>
+            Today</button>
+            
+            <button class="priority"><span class="priority-icon">></span> Priority</button>
+
+            <div class="select-priority">
+                <p class="high">High</p>
+                <p class="medium">Medium</p>
+                <p class="low">Low</p>
+                <p class="not-important">Not-Important</p>
+            </div>
+            
+            <button class="project-btn"><span class="project-icon">>></span> Project</button>
+
+            <div class="select-project">
+                <button class="inbox">Inbox</button>
+            </div>
+
+            <div class="add-project-btn"><span class="add-icon">+</span>Add Project</div>
+        </section>
+
+        <main class="content">
+            <div class="todo-container">
+                <h1 class="title-name">Inbox</h1>
+                <div class="todos-display-container"></div>
+            </div>
+        </main>
+
+        <div id="add-todo-form-container">
+            <form id="add-todo-form" class="form-card">
+                
+            </form>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

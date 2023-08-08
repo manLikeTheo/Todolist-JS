@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+    height: 100vh;
+}
+
+#page-container {
+    display: grid;
+    min-height: 100vh;
+    grid: 10vh 1fr / clamp(13rem, 20%, 20rem) 1fr;
+}
+
+/* HEADER Styles */
+#header {
+    grid-column: 1/3;
+    background-color: darkblue;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    align-content: center;
+    color: #fff;
+}
+
+#header .app-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.app-name span {
+    color: rgb(214, 55, 44);
+    font-size: 2rem;
+}
+
+#header button{
+    display: flex;
+    gap: 0.5rem;
+    outline: 0;
+    font-size: 1.5rem;
+    padding: 1rem 1rem;
+    border-radius: 5%;
+    border: 0;
+    align-items: center;
+    background: 0;
+    color: #fff;
+    cursor: pointer;
+}
+
+#header button:hover {
+    transform: scale(1.2);
+}
+
+/* SIDEBAR Styles */
+.side-bar {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgb(214, 55, 44);
+    opacity: 0.9;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.side-bar p{
+    color: #fff;
+    font-size: 1rem;
+}
+
+.side-bar * {
+    cursor: pointer;
+}
+
+.side-bar *:hover {
+    transform: scale(0.95);
+}
+
+.side-bar button {
+    background: 0;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    outline: 0;
+    border: 0;
+    /* align-items: center; */
+}
+
+.select-priority *{
+    padding-top: 0.25rem;
+    color: #ddd;
+}
+
+.side-bar .add-project-btn {
+    color: #555;
+    font-weight: 600;
+    cursor: pointer;
+}
