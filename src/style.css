@@ -89,12 +89,107 @@ body{
 }
 
 .select-priority *{
-    padding-top: 0.25rem;
+    margin: 0.5rem;
     color: #ddd;
+}
+
+.select-priority *:hover {
+    transform: scale(1.1);
+    opacity: 0.75;
 }
 
 .side-bar .add-project-btn {
     color: #555;
     font-weight: 600;
     cursor: pointer;
+}
+
+/* Main */
+main.content {
+    position: relative;
+    padding: 1rem;
+}
+/*Add-Todo Form Styles*/
+.add-todo-form-container {
+    /* display: none; */
+    position: fixed;
+    top: 25%;
+    right: 50%;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.form-card {
+    width: 40vw;
+    background: rgb(158, 141, 140);
+    opacity: 0.95;
+    border-radius: 2.5%;
+    display: flex;
+    flex-direction: column;
+    /* gap: 2rem; */
+    padding: 0.75rem;
+}
+
+.form-card .new-todo-header {
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 1.3rem;
+    box-shadow: 4px 4px 5px 0px #292626af;
+}
+
+.form-input {
+    display: flex;
+    flex-direction: column;
+    /* margin: 0.2rem; */
+}
+
+.form-input label {
+    color: #fff;
+    font-weight: 600;
+    padding-top: 1.0rem;
+    font-size: 1.0rem;
+}
+
+.form-input input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    outline: 0;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.form-card .form-buttons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-buttons button {
+    padding: 0.25rem;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 0;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+
+.form-buttons *:hover {
+    transform: scale(1.2);
+    opacity: 0.95;
+}
+
+.form-buttons .close-btn {
+    background-color: rgb(214, 55, 44);
+    color: #fff;
+}
+
+.form-buttons .submit-btn {
+    background-color: darkblue;
+    color: #fff;
 }

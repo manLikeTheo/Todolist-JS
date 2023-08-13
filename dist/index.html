@@ -27,7 +27,7 @@
                 <p class="high">High</p>
                 <p class="medium">Medium</p>
                 <p class="low">Low</p>
-                <p class="not-important">Not-Important</p>
+                <p class="no-priority">No-Priority</p>
             </div>
             
             <button class="project-btn"><span class="project-icon">>></span> Project</button>
@@ -46,9 +46,42 @@
             </div>
         </main>
 
-        <div id="add-todo-form-container">
+        <div id="add-todo-form-container" class="add-todo-form-container">
             <form id="add-todo-form" class="form-card">
-                
+                <p class="new-todo-header">New Todo</p>
+
+                <div class="form-input">
+                    <label for="todo-name">Task Name</label>
+                    <input type="text" name="todo-name" id="todo-name" required placeholder="enter the todo name">
+                </div>
+
+                <div class="form-input">
+                    <label for="todo-description">Todo Description</label>
+                    <input type="text" name="todo-description" id="todo-description" required placeholder="describe your todo">
+                </div>
+
+                <div class="todo-properties-row">
+                    <div class="form-input">
+                        <label for="due-date">Due Date</label>
+                        <input type="date" name="due-date" id="due-date" required>
+                    </div>
+
+                    <div class="form-input">
+                        <label for="project">Project</label>
+                        <select name="todo-project" id="todo-project">
+                            <option value="inbox">Inbox</option>
+                        </select>
+                    </div>
+                    <div class="form-input">
+                        <label for="due-date">Due Date</label>
+                        <input type="date" name="due-date" id="due-date" required>
+                    </div>
+                </div>
+
+                <div class="form-buttons">
+                    <button class="close-btn" type="reset">Close</button>
+                    <button class="submit-btn" type="submit">Submit</button>
+                </div>
             </form>
         </div>
     </div>
